@@ -1,0 +1,82 @@
+body {
+    font: 1rem Helvetica;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+   
+}
+
+.flex {
+    display: flex
+}
+
+.hidden {
+    display: none
+}
+.shown {
+    display: block
+}
+
+body>div {
+    border: 1px solid red;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+form {
+    border: 1px solid red;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+textarea {
+    width: 90%;
+    max-height: 350px;
+    overflow-y: hidden;
+    /* height: 90px; */
+    /* display: block; */
+    /* margin: auto; */
+
+}
+
+.card {
+    display: flex;
+    background: rgb(174, 218, 247);
+    border-radius: 8px;
+    align-items: center;
+    padding: 5px;
+    margin: 5px
+
+}
+
+.card div {
+    font-size: 20pt;
+    padding: 20px;
+    background: rgb(147, 205, 243);
+    border-radius: 8px;
+    background: -webkit-radial-gradient(rgb(233, 236, 240),rgb(100, 145, 197))
+}
+
+.card ul {
+    margin: 0
+}
+
+ul {
+    text-align: left;
+}
+
+}
+
+#result {
+    margin: 0 5%
+}
+
+
+
+/* #goalinitial {
+    max-height: 500px;
+    overflow-y: hidden;
+  } */
+

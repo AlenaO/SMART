@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SMART</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <div id='intro' class="screen">
+        <p>SMART</p>
+        <p>Это приложение позволит вам проработать свою цель по критериям смарт.</p>
+        <img src="/image/smart_2.jpg" alt="SMART" width=50%>
+        <br>
+        <button id="startgoal" class="next">start</button>
+    </div>
+
+    <form id="goal" class="screen hidden">
+        <p align="center">Сформулируй свою цель-рабочая версия формулировки</p>
+        <textarea id="goalinitial" rows="5">цель: </textarea><br>
+            <button id="backintro" class="back">back</button>
+            <button id="nextspecificintro" class="next">next</button>
+    </form>
+
+    <div id='specificintro' class="screen hidden">
+        <p>Specific</p>
+        <p>Цель должна быть конкретной:</p>
+        <p align="left":>Понятие «Конкретный» означает, что при постановке цели 
+            точно определен результат, который Вы хотите достичь.<br /> Конкретность 
+            предполагает однозначность трактовок и понимания различными людьми.<br />
+            Она должна быть понятна и доступна не только лично вам, но и окружающим. 
+            Всегда действует правило: одна цель — один результат.<br /> Если при 
+            постановке цели выяснилось, что в результате требуется достичь нескольких 
+            результатов, то цель должна быть разделена на несколько целей.</p>
+        <img src="/image/specific.jpg" alt="Specific" width=30%>
+        <br>
+        <button id="backgoal" class="back">back</button>
+        <button id="nextspecific" class="next">next</button> 
+    </div>
+
+    <form id="specific" class="screen hidden">
+        <div style="border: solid 1px blue">
+            SPECIFIC
+        </div>
+        <div>
+            <p align="left":>Какой ожидаемый желаемый результат достижения этой цели?</p>
+            <textarea id="specific_1" rows="5">результат: </textarea><br>
+            <p align="left":>Что ты будешь видеть, слышать и ощущать получив 
+            ожидаемый результат достижения этой цели?</p>
+            <textarea id="specific_21" rows="3">видеть: </textarea><br>
+            <textarea id="specific_22" rows="3">слышать: </textarea><br>
+            <textarea id="specific_23" rows="3">ощущать: </textarea><br>
+            <p align="left":>При каких условиях или обстоятельствах ты легко 
+            откажешься от этой цели?</p>
+            <textarea id="specific_3" rows="5">откажусь если: </textarea>
+            <br>
+            <button id="backspecificintro" class="back">back</button>
+            <button id="nextmeasintro" class="next">next</button>
+        </div>
+    </form> 
+
+    <div id='measintro' class="screen hidden">
+        <p align="center"><b>Measurable</b></p>
+        <p align="center">Цель должна быть измеримой:</p>
+        <p align="left">Измеримость цели предполагает наличие критериев 
+        (измерителей), которые позволили бы определить, достигнута ли 
+        поставленная цель<br />и в какой степени. Если нет измерителей, очень 
+        сложно оценить результаты проделанной работы и объективно контролировать 
+        процесс.<br /> В качестве критериев достижения цели вы можете 
+        использовать: проценты, различные соотношения; частота происходящего; 
+        средние показатели;<br /> время (каждый час, день, неделю); в измеримость 
+        также входит и стоимость (к примеру цель – покупка смартфона: 
+        необходимо отмечать ценой (… у.е.).</p>
+        <img src="/image/measurable.jpg" alt="Measurable" width=30%>
+        <br>
+        <button id="backspecific" class="back">back</button>
+        <button id="nextmeasurable" class="next">next</button>
+    </div>
+
+    <form id="measurable" class="screen hidden">
+        <div style="border: solid 1px blue">
+            MEASURABLE
+        </div>
+        
+        <p align="left">Какой показатель будет говорить о том, что цель достигнута?</p>
+        <textarea id="measurable_1" rows="3">показатели: </textarea><br>
+        <p align="left">Какое значение у данного показателя должно быть для того, 
+        чтобы цель считалась достигнутой?</p>
+        <textarea id="measurable_2" rows="3">значение: </textarea><br>
+        <p align="left">Когда будет считаться, что цель достигнута?</p>
+        <textarea id="measurable_3" rows="3">тогда, когда: </textarea>
+        <br>
+        <button id="backmeasintro" class="back">back</button>        
+        <button id="nextachievable" class="next">next</button>
+    </form>
+
+    <div id='achievintro' class="screen hidden">
+        <p align="center"><b>Achievable</b></p>
+        <p align="center":>Цель должна быть достижимой:</p>
+        <p align="left":>Цели по SMART должны быть достижимы, так как 
+        реалистичность выполнения задачи влияет на мотивацию исполнителя.<br />
+        Если цель не является достижимой — вероятность ее выполнения будет 
+        стремиться к 0.<br />Достижимость цели определяется на основе 
+        собственного опыта с учетом всех имеющихся ресурсов и ограничений.<br />
+        Ограничениями могут быть: временные ресурсы, инвестиции, 
+        трудовые ресурсы, знания и опыт исполнителя, доступ к информации и ресурсам,
+        <br />возможность принимать решения и наличие управленческих рычагов 
+        у исполнителя цели.</p>
+        <img src="/image/achievable.jpg" alt="Achievable" width=30%>
+        <br>
+        <button id="backmeasurable" class="back">back</button>
+        <button id="nextachievable" class="next">next</button>
+        </div>
+    
+    <form id="achievable" class="screen hidden">
+        <div style="border: solid 1px blue">
+            ACHIEVABLE
+        </div>      
+        <p align="left":>К каким ресурсам, необходимым для достижения цели, у меня 
+        уже есть доступ?</p>
+        <textarea id="achievable_1" rows="3">есть доступ к: </textarea>
+        <p align="left":>К каким ресурсам, необходимых для достижения цели, я могу 
+        получить доступ?</p>
+        <textarea id="achievable_2" rows="3">могу получить доступ к: </textarea>
+        <p align="left":>Какие факторы и ограничения могут препятствовать достижению 
+        моей цели?</p>
+        <textarea id="achievable_3" rows="3">могут препятствовать: </textarea>
+        <br>
+        <button id="backachievintro" class="back">back</button>     
+        <button id="nextrelevantintro" class="next">next</button>
+    </form>
+
+    <div id='relintro' class="screen hidden">
+        <p align="center"><b>Relevant</b></p>
+        <p align="center":>Цель должна быть значимой:</p>
+        <p align="left":>Relevant – категория, отвечающая за привязку цели к чему 
+        то и к актуальности самой цели.<br />Она помогает распознать, качество 
+        цели, ее истинность, и дает ответ на вопрос: «Зачем мне это?».<br />
+        Необходимо убедиться, нужен ли предполагаемый результат, не идет ли сама 
+        цель вразрез с остальными задачами и планами.<br />
+        Насколько она отвечает вашим потребностям именно сейчас..</p>
+        <img src="/image/relevant_1.jpg" alt="Relevant" width=30%>
+        <br>
+        <button id="backachievable" class="back">back</button>
+        <button id="nextrelevant" class="next">next</button>
+        </div>
+
+    <form id="relevant" class="screen hidden">
+        <div style="border: solid 1px blue">
+            RELEVANT
+        </div>      
+        <p align="left":>Почему для меня важен результат достижения этой цели?</p>
+        <textarea id="relevant_1" rows="3">потому что: </textarea>
+        <p align="left":>К каким эффектам в будущем приведет достижение этой цели?</p>
+        <textarea id="relevant_2" rows="3">эффекты: </textarea>
+        <p align="left":>Средством и ресурсом для какой более глобальной цели, 
+        мечты будет результат достижения этой цели?</p>
+        <textarea id="relevant_3" rows="3">ресурс для: </textarea>
+        <p align="left":>Как достижение этой цели повлияет на другие сферы 
+        твоей жизни?</p>
+        <textarea id="relevant_4" rows="3"></textarea>
+        
+        <br>
+        <button id="backrelintro" class="back">back</button>     
+        <button id="nexttimedintro" class="next">next</button>
+    </form>
+
+    <div id='timedintro' class="screen hidden">
+        <p align="center"><b>Timed</b></p>
+        <p align="center":>Цель должна быть ограничена во времени:</p>
+        <p align="left":>Цель по SMART должна быть ограничена по выполнению 
+        во времени, а значит должен быть определен<br />финальный срок, 
+        превышение которого говорит о невыполнении цели.<br />Установление 
+        временных рамок и границ для выполнения цели позволяет сделать процесс 
+        управления контролируемым.<br />При этом временные рамки должны быть 
+        определены с учетом возможности достижения цели в установленные сроки.</p>
+        <img src="/image/timed.png" alt="Timed" width=40%>
+        <br>
+        <button id="backrelevant" class="back">back</button>
+        <button id="nexttimed" class="next">next</button>
+        </div>
+                        
+    <form id="timed" class="screen hidden"> 
+        <div style="border: solid 1px blue">
+            TIMED
+        </div>      
+        <p align="left":>Установите желаемый срок достижения цели:</p>
+        <textarea id="timed_1" rows="3">срок достижения: </textarea>
+        <p align="left":>Установите срок пересмотра цели в процессе ее достижения:</p>
+        <textarea id="timed_2" rows="3">срок пересмотра: </textarea>
+        <p align="left":>Какой самый максимальный срок вы даете себе на достижение 
+        этой цели?</p>
+        <textarea id="timed_3" rows="3">максимальный срок: </textarea>
+        <br>
+        <p><button id="backtimedintro" class="back">back</button>     
+        <button id="nextresult" class="next">next</button>  
+    </form>
+
+    <div id="result" class="screen hidden">
+        <div class="card">
+            <div>G</div>
+            <ul>
+                <li id="G">рабочая цель</li>
+            </ul>
+        </div>      
+        <div class="card">
+            <div>S</div>
+            <ul>
+                <li id="S_1">ответ на вопрос 1</li>
+                <li id="S_21">ответ на вопрос 2</li>
+                <li id="S_22">ответ на вопрос 2</li>
+                <li id="S_23">ответ на вопрос 2</li>
+                <li id="S_3">ответ на вопрос 3</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div>M</div>
+            <ul>
+                <li id="M_1">ответ на вопрос 1</li>
+                <li id="M_2">ответ на вопрос 2</li>
+                <li id="M_3">ответ на вопрос 3</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div>A</div>
+            <ul>
+                <li id="A_1">ответ на вопрос 1</li>
+                <li id="A_2">ответ на вопрос 2</li>
+                <li id="A_3">ответ на вопрос 3</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div>R</div>
+            <ul>
+                <li id="R_1">ответ на вопрос 1</li>
+                <li id="R_2">ответ на вопрос 2</li>
+                <li id="R_3">ответ на вопрос 3</li>
+            </ul>
+        </div>
+        <div class="card">
+            <div>T</div>
+            <ul>
+                <li id="T_1">ответ на вопрос 1</li>
+                <li id="T_2">ответ на вопрос 2</li>
+                <li id="T_3">ответ на вопрос 3</li>
+            </ul>
+        </div>
+        <br>
+        <button id="backtimed" class="back">back</button>     
+        <button id="send" class="next">send</button>
+    </div>
+
+    <form id="send" class="screen hidden"> 
+        <p>введите ваш email адрес</p>
+        <input type="email" size="50"></input>
+        <br>
+        <button id="backresults" class="back">back</button>     
+        <button id="submit">submit</button>  
+    </form>
+
+    <!--спасибо за ваш чтото там проверьте свою почту -->
+
+    <script src='script.js'></script>
+
+</body>
+
+</html>

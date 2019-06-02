@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>SMART</title>
+    <link rel="stylesheet" href="https://github.com/AlenaO/web-beginner-SMART/blob/master/style.css">
+</head>
+
+<body>
+    
+    <div id='intro' class="shown">
+        <p>SMART</p>
+        <p>Это приложение позволит вам проработать свою цель по критериям смарт.</p>
+        <img src="/image/smart.png" alt="SMART">
+            <button id="startgoal">start</button>
+    </div>
+
+    <form id="goal" class="hidden">
+        <p align="center">Сформулируй свою цель-рабочая версия формулировки</p>
+        <textarea id="goalinitial" rows="5"></textarea><br>
+            <button id="backintro">back</button>
+            <button id="nextspecificintro">next</button>
+    </form>
+
+        <div id='specificintro' class="hidden">
+        <p>Specific</p>
+        <p>Цель должна быть конкретной:</p>
+        <p align="left":>Понятие «Конкретный» означает, что при постановке цели 
+            точно определен результат, который Вы хотите достичь.<br /> Конкретность 
+            предполагает однозначность трактовок и понимания различными людьми.<br />
+            Она должна быть понятна и доступна не только лично вам, но и окружающим. 
+            Всегда действует правило: одна цель — один результат.<br /> Если при 
+            постановке цели выяснилось, что в результате требуется достичь нескольких 
+            результатов, то цель должна быть разделена на несколько целей.</p>
+         <img src="/image/specific.png" alt="Specific">
+            <button id="backgoal">back</button>
+            <button id="nextspecific">next</button>
+    </div>
+       
+     <form id="specific" class="hidden">
+        <p align="left":>Какой ожидаемый желаемый результат достижения этой цели?</p>
+        <textarea id="specific1" rows="10"></textarea><br>
+        <p align="left":>Что ты будешь видеть, слышать и ощущать получив ожидаемый результат достижения этой цели?</p>
+        <textarea id="specific2" rows="10"></textarea><br>
+        <p align="left":>При каких условиях или обстоятельствах ты легко откажешься от этой цели?</p>
+        <textarea id="specific3" rows="10"></textarea><br>
+        <button id="backspecificintro">back</button>
+        <button id="nextmeasurable">next</button></p>
+    </form> 
+
+    <form id="measurable" class="hidden">
+        <p align="center"><b>Measurable</b></p>
+        <p align="center">Цель должна быть измеримой:</p>
+        <p align="left">Измеримость цели предполагает наличие критериев (измерителей), которые позволили бы определить, достигнута ли поставленная цель<br />
+        и в какой степени. Если нет измерителей, очень сложно оценить результаты 
+        проделанной работы и объективно контролировать процесс.<br /> В качестве 
+        критериев достижения цели вы можете использовать: проценты, различные 
+        соотношения; частота происходящего; средние показатели;<br /> время (каждый 
+        час, день, неделю); в измеримость также входит и стоимость (к примеру цель – 
+        покупка смартфона: необходимо отмечать ценой (… у.е.).</p>
+        <p align="left">Какой показатель будет говорить о том, что цель достигнута?</p>
+        <input type="text" size="150"></input>
+        <p align="left">Какое значение у данного показателя должно быть для того, чтобы цель считалась достигнутой?</p>
+        <input type="text" size="150"></input>
+        <p align="left">Когда будет считаться, что цель достигнута?</p>
+        <input type="text" size="150"></input>
+            <p><button id="backspecific">back</button>        
+            <button id="nextachievable">next</button></p>
+    </form>
+
+    <form id="achievable" class="hidden">
+        <p align="center"><b>Achievable</b></p>
+        <p align="center":>Цель должна быть достижимой:</p>
+        <p align="left":>Цели по SMART должны быть достижимы, так как реалистичность 
+        выполнения задачи влияет на мотивацию исполнителя.<br />Если цель не является 
+        достижимой — вероятность ее выполнения будет стремиться к 0.<br />Достижимость 
+        цели определяется на основе собственного опыта с учетом всех имеющихся ресурсов 
+        и ограничений.<br />Ограничениями могут быть: временные ресурсы, инвестиции, 
+        трудовые ресурсы, знания и опыт исполнителя, доступ к информации и ресурсам,<br />
+        возможность принимать решения и наличие управленческих рычагов у исполнителя цели.</p>
+        <p align="left":>К каким ресурсам, необходимым для достижения цели, у меня уже есть доступ?</p>
+        <input type="text" size="150"></input>
+        <p align="left":>К каким ресурсам, необходимых для достижения цели, я могу получить доступ?</p>
+        <input type="text" size="150"></input>
+        <p align="left":>Какие факторы и ограничения могут препятствовать достижению моей цели?</p>
+        <input type="text" size="150"></input>
+            <p><button id="backmeasurable">back</button>     
+            <button id="nextrelevant">next</button></p>
+    </form>
+
+    <form id="relevant" class="hidden">
+            <p align="center"><b>Relevant</b></p>
+            <p align="center":>Цель должна быть значимой:</p>
+            <p align="left":>Relevant – категория, отвечающая за привязку цели к чему 
+            то и к актуальности самой цели.<br />Она помогает распознать, качество 
+            цели, ее истинность, и дает ответ на вопрос: «Зачем мне это?».<br />
+            Необходимо убедиться, нужен ли предполагаемый результат, не идет ли сама 
+            цель вразрез с остальными задачами и планами.<br />
+            Насколько она отвечает вашим потребностям именно сейчас.</p>
+            <p align="left":>Почему для меня важен результат достижения этой цели?</p>
+            <input type="text" size="150"></input>
+            <p align="left":>К каким эффектам в будущем приведет достижение этой цели?</p>
+            <input type="text" size="150"></input>
+            <p align="left":>Средством и ресурсом для какой более глобальной цели, мечты будет результат достижения этой цели?</p>
+            <input type="text" size="150"></input>
+                <p><button id="backachievable">back</button>     
+                <button id="nexttimed">next</button></p>
+        </form>
+
+        <form id="timed" class="hidden"> 
+                <p align="center"><b>Timed</b></p>
+                <p align="center":>Цель должна быть ограничена во времени:</p>
+                <p align="left":>Цель по SMART должна быть ограничена по выполнению 
+                во времени, а значит должен быть определен<br />финальный срок, 
+                превышение которого говорит о невыполнении цели.<br />Установление 
+                временных рамок и границ для выполнения цели позволяет сделать процесс 
+                управления контролируемым.<br />При этом временные рамки должны быть 
+                определены с учетом возможности достижения цели в установленные сроки.</p>
+                <p align="left":>Установите желаемый срок достижения цели:</p>
+                <input type="text" size="150"></input>
+                <p align="left":>Установите срок пересмотра цели в процессе ее достижения:</p>
+                <input type="text" size="150"></input>
+                <p align="left":>Какой самый максимальный срок вы даете себе на достижение этой цели?</p>
+                <input type="text" size="150"></input>
+                    <p><button id="backrelevant">back</button>     
+                    <button id="nextresult">next</button></p>   
+        </form>
+
+        <div id="result" class="hidden">
+            <div class="card">
+                <div>S</div>
+                <ul>
+                    <li>ответ на вопрос 1</li>
+                    <li>ответ на вопрос 2</li>
+                    <li>ответ на вопрос 3</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div>M</div>
+                <ul>
+                    <li>ответ на вопрос 1</li>
+                    <li>ответ на вопрос 2</li>
+                    <li>ответ на вопрос 3</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div>A</div>
+                <ul>
+                    <li>ответ на вопрос 1</li>
+                    <li>ответ на вопрос 2</li>
+                    <li>ответ на вопрос 3</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div>R</div>
+                <ul>
+                    <li>ответ на вопрос 1</li>
+                    <li>ответ на вопрос 2</li>
+                    <li>ответ на вопрос 3</li>
+                </ul>
+            </div>
+            <div class="card">
+                <div>T</div>
+                <ul>
+                    <li>ответ на вопрос 1</li>
+                    <li>ответ на вопрос 2</li>
+                    <li>ответ на вопрос 3</li>
+                </ul>
+            </div>
+        </div>
+        <script src='https://github.com/AlenaO/web-beginner-SMART/blob/master/script.js'></script>
+    </body>
+
+    </html>
