@@ -219,9 +219,24 @@ function growTA(e) {
     })
 }
 
+download.onclick = downLoad
+
+function downLoad(e) {
+    e.preventDefault()
+    var text = result.innerHTML.replace(/\n.*<br>(\n.*)*<\/button>/, "")
+    var element = document.createElement('a');
+    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(text));
+    element.setAttribute('download', "SMART результаты.html");
+    
+    element.style.display = 'none';
+    document.body.appendChild(element);
+    
+    element.click();
+    
+    document.body.removeChild(element);
+    }
+      
 submit.onclick = sendEmail
-
-
 
 function sendEmail(e) {   
     e.preventDefault()
@@ -231,15 +246,6 @@ function sendEmail(e) {
     
     fetch(url)
 }
-
-textarea.onkeyup =  textarea.oncopy = textarea.onpaste = textarea.oncut = (function() {
-    return function() {
-        result_G.innerHTML = this.value;
-
-    }
-}
-)();
-
 
 
 /* <a href="data:application/octet-stream;charset=utf-8;base64,Zm9vIGJhcg==">text file</a><br/>
